@@ -2,6 +2,7 @@ package arrays;
 
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class threeSum {
     public static void main(String args[]) {
@@ -11,6 +12,7 @@ public class threeSum {
         for(int i = 0;i<n; ++i) {
             arr[i] = sc.nextInt();
         }
+        Arrays.sort(arr);
         ArrayList<ArrayList<Integer>> result = findThreeSum(arr, n);
         for(int i = 0; i< result.size(); ++i) {
             for(int j = 0; j< result.get(0).size(); ++j) {
